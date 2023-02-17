@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./Assets//Image/Logo KafeKoding.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Website Kafekoding</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        container:{
+                padding:'10px',
+			
+            },
+        extend: {
+          colors: {
+            main:'#02366E',
+			bg_colors:'rgba(2, 54, 110, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="container m-0 p-0 pt-0 ">
+<div class="lg:bg-[url('./Assets/Image/bakcground.png')] lg:block bg-no-repeat bg-right-top h-[660px] lg:w-[1348px] bg-fixed pt-0">
+	 <!-- navbar -->
+	 <div id="navbar" class="Navbar pr-100 px-5" >
+		<nav class="relative px-4 py-4 flex justify-between items-center ">
+			<a class=" flex justify-between -translate-y-1/4" href="#">
+				<img src="/Assets/Image/Logo KafeKoding.png" class="h-10 mt-3" alt="">
+				<p class="text-[18px] text-main pt-5 ml-3 font-semibold">Kafe Koding</p>
+			</a>
+			<div class="lg:hidden">
+				<button class="navbar-burger flex items-center text-blue-600 p-3">
+					<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Mobile menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+					</svg>
+				</button>
+			</div>
+			<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2  lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+				<li><a class="text-sm text-main text-[18px]" href="#">Beranda</a></li>
+				
+				<li><a class="text-sm text-main text-[18px]" href="#">Tentang Kami</a></li>
+				
+				<li><a class="text-sm text-main text-[18px]" href="#">Kelas</a></li>
+				
+				<li><a class="text-sm text-main text-[18px]" href="#">Mentor</a></li>
+				
+				<li><a class="text-sm text-main text-[18px]" href="#">Blog</a></li>
+			</ul>
+		
+			<a href="#" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-base font-bold leading-6 text-gray-500 whitespace-no-wrap bg-white  hover:border-2 hover:border-slate-50  rounded-full shadow-sm hover:bg-bg_colors hover:text-white focus:outline transition-200">Masuk</a>
+			<a class="hidden lg:inline-block  lg:mr-10 py-2 px-6 text-base font-bold leading-6 text-white whitespace-no-wrap bg-['rgba(2, 54, 110, 0.6)'] border-2 border-white  rounded-full shadow-sm hover:bg-white hover:text-main focus:outline transition-200" href="#">Daftar</a>
+		</nav>
+		<div class="navbar-menu relative z-50 hidden">
+			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+			<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+				<div class="flex items-center mb-8">
+					<a class="mr-auto text-3xl font-bold leading-none" href="#">
+						<img src="/Assets/Image/Logo KafeKoding.png" class="h-10 mt-3" alt="">
+					</a>
+					<button class="navbar-close">
+						<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</button>
+				</div>
+				<div>
+					<ul>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Beranda</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Tentang Kami</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Kelas</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Mentor</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mt-auto">
+					<div class="pt-6">
+						<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none text-gray-500 whitespace-no-wrap bg-white  hover:border-2 hover:border-slate-50  rounded-full shadow-sm hover:bg-main hover:text-white focus:outline transition-200 rounded-xl" href="#">Masuk</a>
+						<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-main hover:border-2 hover:border-main  rounded-full shadow-sm hover:bg-white hover:text-main focus:outline transition-200  rounded-xl" href="#">Daftar</a>
+					</div>
+					<p class="my-4 text-xs text-center text-gray-400">
+						<span>Copyright © 2023</span>
+					</p>
+				</div>
+			</nav>
+		</div>
+	 </div>
+	 <!-- end Navbar -->
+	 <!-- hero -->
+	 <section id="hero" class="pt-0 px-5">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<aside class="w-full self-center  px-5 lg:w-1/2 ">
+					<h1 class="block text-4xl text-main
+					font-normal lg:text-6xl md:text-5xl">Selamat Datang <br>di Kafe Koding</h1>
+					<p class="font-normal text-gray-400 mb-5 leading-relaxed md:text-base lg:text-xl lg:mt-3">
+						Kafe koding merupakan sebuah komunitas belajar yang bergerak dibidang IT dan juga tempat sharing ilmu programing dan seputar dunia IT.
+					</p>
+					<a href="#" target="_blank" class="text-base font-semibold text-white bg-main py-2 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-150">Bergabung Sekarang</a>
+				</aside>
+				<aside class="w-full self-end pl-10  lg:w-1/2">
+					<div class="mt-9">
+						<img src="./Assets/Image//hero.png " class="max-w-full mx-auto" alt="foto Citra">
+					</div>
+					</aside>
+			</div>
+		</div>
+	</section>
+	 <!-- end Hero -->
+</div>
+<!-- Tentang Kami -->
+<section>
+	<div class="container ">
+			  <h1 class='text-center text-2xl font-bold text-main'>Tentang Kami</h1>
+			<div class=" px-10 flex flex-wrap ">
+			<aside class="w-full self-end lg:px-5 my-3 lg:w-1/2"  >
+			  <div class="mt-9" >
+				<div class="grid grid-cols-2 gap-2">
+					<div><img src="./Assets/Image/tentang_kami_1.jpeg" alt="" class="rounded-xl"></div>
+					<div><img src="./Assets/Image/tentang_kami_2.jpg" alt="" class="rounded-xl"></div>
+					<div><img src="./Assets/Image/tentang_kami_3.jpg" alt="" class="rounded-xl"></div>
+					<div><img src="./Assets/Image/tentang_kami_4.jpg" alt="" class="rounded-xl"></div>
+				</div>
+			  </div>
+			  </aside>
+			  <aside class="w-full self-center lg:px-5 lg:w-1/2" >
+			  <h1 class="text-4xl text-[#213644]
+			  font-bold lg:text-6xl md:text-5xl">
+			  </h1>
+			  <p class="font-normal text-['#0000'] text-xs flex justify-between md:text-base lg:text-xl mt-1 lg:mt-5 text-justify">
+				Kafe koding merupakan sebuah komunitas belajar yang bergerak dibidang IT, berdiri pada tanggal 1 Agustus 2013.
+			  </p>
+			  <p class="font-normal text-['#0000'] mb-2 text-xs flex justify-between text-justify md:text-base lg:text-xl mt-3 lg:mt-3">
+				Tujuan dibentuknya komunitas ini ialah dilandasi dengan keinginan untuk berbagi ilmu bagi masyarakat ekonomi rendah dan masyarakat  yang putus sekolah.
+			  </p>
+			  <p class="font-normal text-['#0000'] mb-2 text-xs flex justify-between text-justify md:text-base lg:text-xl mt-3 lg:mt-0">
+				Kami menerima siapapun yang ingin belajar bersama kami dalam mengasah kemampuan softskill dibidang IT hingga siap untuk dunia kerja.
+			  </p>
+			  
+			</aside>
+			</div>
+			
+		  
+	</div>
+</section>
+<!-- End Tentang Kami -->
+<!-- showcase -->
+<section>
+	<div class="container ">
+		<h1 class="text-center pt-36 font-medium font-[30px] text-main leading-10 lg:pb-10">Show Case</h1>
+		<div class="flex">
+			<div class="w-2/12 flex items-center">
+				<div class="w-full text-right">
+					<button class="p-3 rounded-full bg-white border border-gray-600 shadow-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+						  </svg>
+					</button>
+				</div>
+			</div>
+			<div class=""></div>
+			<div class="w-2/12 flex items-center">
+				<div class="w-full text-right">
+					<button class="p-3 rounded-full bg-white border border-gray-600 shadow-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+						  </svg>
+						  
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end showcase -->
+ <script src="./Assets/Main.js" ></script>
+</body>
+</html>
