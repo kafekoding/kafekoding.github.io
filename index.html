@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./Assets//Image/Logo KafeKoding.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
   <title>Website Kafekoding</title>
   <script>
     tailwind.config = {
@@ -14,23 +15,27 @@
 			
             },
         extend: {
+			fontFamily: {
+                 poppins: ['Poppins', 'sans-serif']
+         },
           colors: {
             main:'#02366E',
 			bg_colors:'rgba(2, 54, 110, 0.6)',
+			bt_1:'#F4C247',
           }
         }
       }
     }
   </script>
 </head>
-<body class="container m-0 p-0 pt-0 ">
-<div class="lg:bg-[url('./Assets/Image/bakcground.png')] lg:block bg-no-repeat bg-right-top h-[660px] lg:w-[1348px] bg-fixed pt-0">
+<body class="container m-0 p-0 pt-0 lg:mx-8 overflow-x-hidden font-poppins">
+<div class="lg:bg-[url('./Assets/Image/bakcground.png')] lg:block bg-no-repeat bg-right-top h-[640px] lg:w-[1348px] bg-fixed pt-0 ">
 	 <!-- navbar -->
 	 <div id="navbar" class="Navbar pr-100 px-5" >
 		<nav class="relative px-4 py-4 flex justify-between items-center ">
 			<a class=" flex justify-between -translate-y-1/4" href="#">
 				<img src="/Assets/Image/Logo KafeKoding.png" class="h-10 mt-3" alt="">
-				<p class="text-[18px] text-main pt-5 ml-3 font-semibold">Kafe Koding</p>
+				<p class="text-[18px] text-main pt-5 ml-3 font-normal">Kafe Koding</p>
 			</a>
 			<div class="lg:hidden">
 				<button class="navbar-burger flex items-center text-blue-600 p-3">
@@ -40,20 +45,20 @@
 					</svg>
 				</button>
 			</div>
-			<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2  lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-				<li><a class="text-sm text-main text-[18px]" href="#">Beranda</a></li>
+			<ul class="hidden absolute top-1/2 left-1/2 lg:mr-20 transform -translate-y-1/2  lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-5 ">
+				<li><a class="text-sm text-main text-[18px] font-normal" href="#">Beranda</a></li>
 				
-				<li><a class="text-sm text-main text-[18px]" href="#">Tentang Kami</a></li>
+				<li><a class="text-sm text-main text-[18px] font-normal" href="#">Tentang Kami</a></li>
 				
-				<li><a class="text-sm text-main text-[18px]" href="#">Kelas</a></li>
+				<li><a class="text-sm text-main text-[18px] font-normal" href="#">Kelas</a></li>
 				
-				<li><a class="text-sm text-main text-[18px]" href="#">Mentor</a></li>
+				<li><a class="text-sm text-main text-[18px] font-normal" href="#">Mentor</a></li>
 				
-				<li><a class="text-sm text-main text-[18px]" href="#">Blog</a></li>
+				<li><a class="text-sm text-main text-[18px] font-normal" href="#">Blog</a></li>
 			</ul>
 		
-			<a href="#" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-base font-bold leading-6 text-gray-500 whitespace-no-wrap bg-white  hover:border-2 hover:border-slate-50  rounded-full shadow-sm hover:bg-bg_colors hover:text-white focus:outline transition-200">Masuk</a>
-			<a class="hidden lg:inline-block  lg:mr-10 py-2 px-6 text-base font-bold leading-6 text-white whitespace-no-wrap bg-['rgba(2, 54, 110, 0.6)'] border-2 border-white  rounded-full shadow-sm hover:bg-white hover:text-main focus:outline transition-200" href="#">Daftar</a>
+			<a href="#" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-base font-bold leading-6 text-white whitespace-no-wrap bg-['rgba(2, 54, 110, 0.6)'] border-2 hover:border-main border-white  rounded-full shadow-sm hover:bg-white hover:text-main focus:outline transition-200 ">Masuk</a>
+			<a class="hidden lg:inline-block  lg:mr-10 py-2 px-6 text-base font-bold leading-6 text-gray-500 whitespace-no-wrap bg-white  hover:border-2 hover:border-slate-50  rounded-full shadow-sm hover:bg-bg_colors hover:text-white focus:outline transition-200" href="#">Daftar</a>
 		</nav>
 		<div class="navbar-menu relative z-50 hidden">
 			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -105,14 +110,16 @@
 		<div class="container">
 			<div class="flex flex-wrap">
 				<aside class="w-full self-center  px-5 lg:w-1/2 ">
-					<h1 class="block text-4xl text-main
-					font-normal lg:text-6xl md:text-5xl">Selamat Datang <br>di Kafe Koding</h1>
-					<p class="font-normal text-gray-400 mb-5 leading-relaxed md:text-base lg:text-xl lg:mt-3">
-						Kafe koding merupakan sebuah komunitas belajar yang bergerak dibidang IT dan juga tempat sharing ilmu programing dan seputar dunia IT.
+					<h1 class="block text-4xl text-main mb-5
+					font-bold lg:text-6xl md:text-5xl">Selamat Datang <br>di Kafe Koding</h1>
+					<p class="font-normal  text-gray-400 mb-6 leading-relaxed md:text-base lg:text-[15px] lg:mt-3">
+						Kafe koding merupakan sebuah komunitas belajar
+						<br> yang bergerak dibidang IT dan juga tempat sharing 
+						<br> ilmu programing dan seputar dunia IT.
 					</p>
 					<a href="#" target="_blank" class="text-base font-semibold text-white bg-main py-2 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-150">Bergabung Sekarang</a>
 				</aside>
-				<aside class="w-full self-end pl-10  lg:w-1/2">
+				<aside class="w-full self-end pl-10 lg:w-1/2">
 					<div class="mt-9">
 						<img src="./Assets/Image//hero.png " class="max-w-full mx-auto" alt="foto Citra">
 					</div>
@@ -125,7 +132,7 @@
 <!-- Tentang Kami -->
 <section>
 	<div class="container ">
-			  <h1 class='text-center text-2xl font-bold text-main'>Tentang Kami</h1>
+			  <h1 class='text-center text-[20px] font-semibold text-main pt-20 lg:pt-0'>Tentang Kami</h1>
 			<div class=" px-10 flex flex-wrap ">
 			<aside class="w-full self-end lg:px-5 my-3 lg:w-1/2"  >
 			  <div class="mt-9" >
@@ -137,17 +144,14 @@
 				</div>
 			  </div>
 			  </aside>
-			  <aside class="w-full self-center lg:px-5 lg:w-1/2" >
-			  <h1 class="text-4xl text-[#213644]
-			  font-bold lg:text-6xl md:text-5xl">
-			  </h1>
-			  <p class="font-normal text-['#0000'] text-xs flex justify-between md:text-base lg:text-xl mt-1 lg:mt-5 text-justify">
+			  <aside class="w-full lg:mt-12 lg:px-10 lg:w-1/2" >
+			  <p class="font-normal text-['#0000'] mb-3 text-xs flex justify-between md:text-base lg:text-[18px] mt-1 text-justify mt-3 lg:mt-2">
 				Kafe koding merupakan sebuah komunitas belajar yang bergerak dibidang IT, berdiri pada tanggal 1 Agustus 2013.
 			  </p>
-			  <p class="font-normal text-['#0000'] mb-2 text-xs flex justify-between text-justify md:text-base lg:text-xl mt-3 lg:mt-3">
+			  <p class="font-normal text-['#0000'] mb-3 text-xs flex justify-between text-justify md:text-base lg:text-[18px] mt-3 lg:mt-3">
 				Tujuan dibentuknya komunitas ini ialah dilandasi dengan keinginan untuk berbagi ilmu bagi masyarakat ekonomi rendah dan masyarakat  yang putus sekolah.
 			  </p>
-			  <p class="font-normal text-['#0000'] mb-2 text-xs flex justify-between text-justify md:text-base lg:text-xl mt-3 lg:mt-0">
+			  <p class="font-normal text-['#0000'] mb-3 text-xs flex justify-between text-justify md:text-base lg:text-[18px] mt-3 lg:mt-0">
 				Kami menerima siapapun yang ingin belajar bersama kami dalam mengasah kemampuan softskill dibidang IT hingga siap untuk dunia kerja.
 			  </p>
 			  
@@ -158,8 +162,142 @@
 	</div>
 </section>
 <!-- End Tentang Kami -->
-<!-- showcase -->
+<!-- Flow KK -->
 <section>
+	<div class="container px-5 mt-20">
+		<div class="bg bg-[url('./Assets/Image/bg-flow-kk.svg')]  lg:mx-5">
+			<div class="px-10 flex flex-wrap ">
+			<div class="lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-2 lg:pt-10">
+				<div>
+					<p class="font-semibold text-[25px] lg:text-[35px] text-main mb-3 ">Satu Platfrom 
+						Banyak Solusi</p>
+						<span class="font-normal text-[12px] lg:text-[18px] text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus a unde aperiam eius libero amet asperiores voluptas debitis recusandae sunt Lorem ipsum dolor. </span>
+				</div>
+				<div>
+				</div>
+				<div>
+			<div class=''>
+				<div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl ">
+					<div class="pb-6">
+						<div class="flex flex-wrap justify-center">
+							<div class="hidden lg:flex lg:justify-start lg:items-center w-full ">
+								<div class="relative">
+									<img src="./Assets//Image/kelas_diskusi.svg" class="dark:shadow-xl border-main dark:border-gray-800 rounded-full align-middle border-4 absolute m-28 -ml-18 lg:-ml-16 max-w-[100px]" />
+								</div>
+							</div>
+						</div>
+						<div class="mt-8 ml-11">
+							<h3 class="mb-1 lg:text-2xl font-bold leading-normal text-black ">Kelas Diskusi</h3>
+						</div>
+						<div class="pt-6 mx-6 mt-0 text-start">
+							<div class="flex flex-wrap justify-center">
+								<div class="w-full px-6">
+									<p class="mb-3 font-light leading-relaxed text-gray-600 dark:text-gray-400 text-justify">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus a unde aperiam eius libero amet asperiores voluptas debitis recusandae sunt Lorem ipsum dolor, .
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl">
+							<div class="absolute flex -space-x-12  mb-36">
+								<button class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[80px] lg:px-[100px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150 ">Yuk Diskusi Sekarang</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+				</div>
+			</div>
+			<div class="lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-2">
+				<div>
+				</div>
+				<div>
+					<div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl ">
+						<div class="pb-6">
+							<div class="flex flex-wrap justify-center">
+								<div class="hidden lg:flex lg:justify-start lg:items-center w-full ">
+									<div class="relative">
+										<img src="./Assets//Image/kelas_explorasi.svg" class="dark:shadow-xl border-main dark:border-gray-800 rounded-full align-middle border-4 absolute m-28 -ml-18 lg:-ml-16 max-w-[100px]" />
+									</div>
+								</div>
+							</div>
+							<div class="mt-8  ml-11">
+								<h3 class="mb-1 lg:text-2xl font-bold leading-normal text-black ">Explorasi Project</h3>
+							</div>
+							<div class="pt-6 mx-6 mt-0 text-start">
+								<div class="flex flex-wrap justify-center">
+									<div class="w-full px-6">
+										<p class="mb-3 font-light leading-relaxed text-gray-600 dark:text-gray-400 text-justify">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus a unde aperiam eius libero amet asperiores voluptas debitis recusandae sunt Lorem ipsum dolor, .
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl">
+								<div class="absolute flex -space-x-12  mb-36">
+									<button class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[110px] lg:px-[150px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150 ">Yuk Jelajahi</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+			<div class=' '>
+				
+				
+			</div>
+				</div>
+			</div>
+			<div class="lg:grid lg:grid-cols-3 lg:grid-flow-col lg:gap-2 lg:px-10">
+				<div>
+					<div class="relative w-full group max-w-md min-w-0 mx-auto mt-6 mb-6 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl ">
+						<div class="pb-6">
+							<div class="flex flex-wrap justify-center">
+								<div class="hidden lg:flex lg:justify-start lg:items-center w-full ">
+									<div class="relative">
+										<img src="./Assets//Image/blogging.svg" class="dark:shadow-xl border-main dark:border-gray-800 rounded-full align-middle border-4 absolute m-28 -ml-18 lg:-ml-16 max-w-[100px]" />
+									</div>
+								</div>
+							</div>
+							<div class="mt-8  ml-11">
+								<h3 class="mb-1 lg:text-2xl font-bold leading-normal text-black ">Blogging</h3>
+							</div>
+							<div class="pt-6 mx-6 mt-0 text-start">
+								<div class="flex flex-wrap justify-center">
+									<div class="w-full px-6">
+										<p class="mb-3 font-light leading-relaxed text-gray-600 dark:text-gray-400 text-justify">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus a unde aperiam eius libero amet asperiores voluptas debitis recusandae sunt Lorem ipsum dolor, .
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="relative h-8 overflow-hidden translate-y-6 rounded-b-xl">
+								<div class="absolute flex -space-x-12  mb-36">
+									<button class="whitespace-nowrap lg:text-[18px] align-center font-normal text-white bg-bt_1 py-1 px-[80px] lg:px-[95px] rounded-b-xl hover:shadow-lg hover:opacity-80 transition duration-150 ">Yuk Diskusi Sekarang</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					
+				</div>
+				<div>
+			<div>
+
+			</div>
+				</div>
+			</div>
+		</div>
+		
+			
+	</div> 
+	</div>
+</section>
+<!-- end Flow KK -->
+<!-- showcase -->
+<!-- <section>
 	<div class="container ">
 		<h1 class="text-center pt-36 font-medium font-[30px] text-main leading-10 lg:pb-10">Show Case</h1>
 		<div class="flex">
@@ -185,7 +323,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- end showcase -->
  <script src="./Assets/Main.js" ></script>
 </body>
